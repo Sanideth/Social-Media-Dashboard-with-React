@@ -4,6 +4,7 @@ import React from 'react';
 function ThemeSwitcherButton() {
 
     function buttonClick() {
+        //DOM element variables
         const btnCircle = document.getElementById('btn-circle');
         const btnThemeSwitcher = document.getElementById('btn-theme-switcher');
         const headingPrimary = document.getElementById('heading-primary');
@@ -12,15 +13,17 @@ function ThemeSwitcherButton() {
         const userTextNumbers = document.querySelectorAll('.main__user-text-numbers');
         const userInteractionNumbers = document.querySelectorAll('.main__user-interaction-numbers');
         
+        // Button active state style change
         btnCircle.classList.toggle('btn-circle-active');
         btnThemeSwitcher.classList.toggle('btn-active');
         document.body.classList.toggle('body-active');
         headingPrimary.classList.toggle('text-color-darkest');
-
+        //User numbers color change on active state
         userTextNumbers.forEach(element => {
             element.classList.toggle('text-color-darkest');
         })
 
+        //Grid box style and hover state change on active state
         boxGridPrimary.forEach(element => {
             element.classList.toggle('bg-color-lighten');
             element.classList.toggle('box-grid-active');
@@ -30,7 +33,7 @@ function ThemeSwitcherButton() {
             element.classList.toggle('bg-color-lighten')
             element.classList.toggle('box-grid-active');
         })
-
+        // User interaction numbers style change on active state
         userInteractionNumbers.forEach(element => {
             element.classList.toggle('text-color-darkest');
         })
