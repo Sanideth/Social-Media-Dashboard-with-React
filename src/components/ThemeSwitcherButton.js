@@ -42,8 +42,8 @@ function ThemeSwitcherButton() {
     return (
         <div className="button-container">
             <p className="button-text">Dark Mode</p>
-            <button className="btn btn-theme-switcher" id="btn-theme-switcher" onClick={buttonClick}>
-                <div className="btn-circle" id="btn-circle"></div>
+            <button className="btn btn-theme-switcher" id="btn-theme-switcher" onClick={buttonClick} aria-label="Button for Theme Switch">
+                <span className="btn-circle" id="btn-circle"></span>
             </button>
         </div>
     )
