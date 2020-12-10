@@ -22,11 +22,13 @@ function ThemeSwitcherButton() {
         })
 
         boxGridPrimary.forEach(element => {
-            element.classList.toggle('bg-color-lighten')
+            element.classList.toggle('bg-color-lighten');
+            element.classList.toggle('box-grid-active');
         })
 
         boxGridSecondary.forEach(element => {
             element.classList.toggle('bg-color-lighten')
+            element.classList.toggle('box-grid-active');
         })
 
         userInteractionNumbers.forEach(element => {
