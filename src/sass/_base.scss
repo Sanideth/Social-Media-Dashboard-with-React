@@ -56,5 +56,22 @@ body {
     var(--color-bg-very-dark-blue-top) 25%,
     var(--color-bg-very-dark-blue-main) 25%
   );
+  background-repeat: no-repeat;
   color: var(--color-text-desaturated-blue);
+
+  @media only screen and (max-width: $bp-medium) {
+    height: auto;
+    background-image: linear-gradient(
+      to bottom,
+      var(--color-bg-very-dark-blue-top) 15%,
+      var(--color-bg-very-dark-blue-main) 15%
+    );
+  }
+  @media only screen and (max-width: $bp-small) {
+    background-image: linear-gradient(
+      to bottom,
+      var(--color-bg-very-dark-blue-top) 10%,
+      var(--color-bg-very-dark-blue-main) 10%
+    );
+  }
 }
