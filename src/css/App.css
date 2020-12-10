@@ -41,7 +41,15 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 1.4rem;
   background-image: linear-gradient(to bottom, var(--color-bg-very-dark-blue-top) 25%, var(--color-bg-very-dark-blue-main) 25%);
+  background-repeat: no-repeat;
   color: var(--color-text-desaturated-blue); }
+  @media only screen and (max-width: 53em) {
+    body {
+      height: auto;
+      background-image: linear-gradient(to bottom, var(--color-bg-very-dark-blue-top) 15%, var(--color-bg-very-dark-blue-main) 15%); } }
+  @media only screen and (max-width: 37.5em) {
+    body {
+      background-image: linear-gradient(to bottom, var(--color-bg-very-dark-blue-top) 10%, var(--color-bg-very-dark-blue-main) 10%); } }
 
 .header {
   display: flex;
@@ -86,8 +94,8 @@ body {
   padding: 1.8em 4em 1.3em 4em; }
   @media only screen and (max-width: 68.75em) {
     .main__box-grid-primary {
-      padding-left: 2em;
-      padding-right: 2em; } }
+      padding-left: 1.5em;
+      padding-right: 1.5em; } }
   .main__box-grid-primary:first-child {
     border-top: 0.3rem solid var(--color-primary-facebook); }
   .main__box-grid-primary:nth-child(2) {
@@ -251,9 +259,18 @@ body {
 .body-active {
   background-image: linear-gradient(to bottom, var(--color-bg-pale-blue-top) 25%, #fff 25%);
   color: var(--color-text-grayish-blue); }
+  @media only screen and (max-width: 53em) {
+    .body-active {
+      background-image: linear-gradient(to bottom, var(--color-bg-pale-blue-top) 15%, #fff 15%); } }
+  @media only screen and (max-width: 37.5em) {
+    .body-active {
+      background-image: linear-gradient(to bottom, var(--color-bg-pale-blue-top) 10%, #fff 10%); } }
 
 .text-color-darkest {
   color: var(--color-text-very-dark-blue); }
 
 .bg-color-lighten {
   background-color: var(--color-bg-grayish-blue-card); }
+
+.box-grid-active:hover {
+  background-color: #d0d3e1; }
