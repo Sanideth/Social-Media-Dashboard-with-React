@@ -1,77 +1,73 @@
 .u-p-m {
-  padding: 3em;
+    padding: 3em;
 
-  @media only screen and (max-width: $bp-small) {
-    padding: 3em 1em;
-  }
+    @media only screen and (max-width: $bp-small) {
+        padding: 3em 1em;
+    }
 }
 .u-mb-sm {
-  margin-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 .u-mb-m {
-  margin-bottom: 5rem;
-  @media only screen and (max-width: $bp-small) {
-    margin-bottom: 3rem;
-  }
+    margin-bottom: 5rem;
+    @media only screen and (max-width: $bp-small) {
+        margin-bottom: 3rem;
+    }
 }
 
 .red {
-  color: var(--color-primary-red);
+    color: var(--color-primary-red);
 }
 
 .btn-circle-active {
-  transform: translateX(150%);
-  background-color: #fff;
+    transform: translateX(150%);
 }
 
 .btn-active {
-  background-color: var(--color-primary-grey);
-  background-image: none;
-  &:hover {
-    background-image: linear-gradient(
-      to right,
-      hsl(210, 78%, 56%),
-      hsl(146, 68%, 55%)
-    );
-  }
-  &:hover .btn-circle {
-    background-color: #fff;
-  }
+    background-color: var(--color-primary-grey);
+    background-image: none;
+    &:hover {
+        background-image: linear-gradient(
+            to right,
+            hsl(210, 78%, 56%),
+            hsl(146, 68%, 55%)
+        );
+    }
 }
 
 .body-active {
-  background-image: linear-gradient(
-    to bottom,
-    var(--color-bg-pale-blue-top) 25%,
-    #fff 25%
-  );
-  color: var(--color-text-grayish-blue);
-  @media only screen and (max-width: $bp-medium) {
     background-image: linear-gradient(
-      to bottom,
-      var(--color-bg-pale-blue-top) 15%,
-      #fff 15%
+        to bottom,
+        var(--color-bg-pale-blue-top) 25%,
+        #fff 25%
     );
-  }
-  @media only screen and (max-width: $bp-small) {
-    background-image: linear-gradient(
-      to bottom,
-      var(--color-bg-pale-blue-top) 10%,
-      #fff 10%
-    );
-  }
+    color: var(--color-text-grayish-blue);
+    @media only screen and (max-width: $bp-medium) {
+        background-image: linear-gradient(
+            to bottom,
+            var(--color-bg-pale-blue-top) 15%,
+            #fff 15%
+        );
+    }
+    @media only screen and (max-width: $bp-small) {
+        background-image: linear-gradient(
+            to bottom,
+            var(--color-bg-pale-blue-top) 10%,
+            #fff 10%
+        );
+    }
 }
 
 .text-color-darkest {
-  color: var(--color-text-very-dark-blue);
+    color: var(--color-text-very-dark-blue);
 }
 
 .bg-color-lighten {
-  background-color: var(--color-bg-grayish-blue-card);
+    background-color: var(--color-bg-grayish-blue-card);
 }
 
 .box-grid-active {
-  &:hover {
-    background-color: hsl(230, 22%, 85%);
-  }
+    &:hover {
+        background-color: hsl(230, 22%, 85%);
+    }
 }
