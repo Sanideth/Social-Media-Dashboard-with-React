@@ -44,7 +44,14 @@
     "autoprefixer": "^10.1.0",
     "node-sass": "^5.0.0",
     "postcss": "^8.2.1",
-    "postcss-cli": "^8.3.0"
+    "postcss-cli": "^8.3.0",
+    "prettier": "^2.2.1"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": true,
+    "singleQuote": true
   },
   "homepage": "https://sanideth.github.io/Social-Media-Dashboard-with-React/"
 }
